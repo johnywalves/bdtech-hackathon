@@ -9,6 +9,11 @@ def overview_dataframe(path):
     file.write(f"Formato linhas **{dataframe.shape[0]}** colunas **{dataframe.shape[1]}**")
     file.write("\n\n")
 
+    file.write("```bash\n")
+    file.write(str(dataframe.head()))
+    file.write("\n```")
+    file.write("\n\n")
+
     del dataframe
 
 # Cadastro de PDVs: PDV, On/Off Prem, Categoria (c-store, g-store, liquor etc.), Zipcode.
