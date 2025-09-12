@@ -32,15 +32,25 @@ Instalar as bibliotecas utilizadas
 pip install -r requirements.txt
 ```
 
-### Executar processo de exploração
+### Iniciar o ambiente
 
 Iniciar o ambiente
 
 ```bash
-source env/bin/activate
+source env/bin/activate 
 ```
 
+### Executar processo de exploração
+
 Executar o script de exploração
+
+```bash
+python3 src/explore
+```
+
+### Executar processo de transformação
+
+Executar o script de transformação
 
 ```bash
 python3 src/explore
