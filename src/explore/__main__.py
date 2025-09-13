@@ -1,3 +1,12 @@
+import sys
+import os
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
+parent_dir = os.path.join(current_dir, '..')
+sys.path.append(parent_dir)
+
+from consts import pdv_raw_path, products_raw_path, transaction_raw_path 
+
 import pandas as pd
 
 file = open("EXPLORE.md", "w")
@@ -18,12 +27,12 @@ def overview_dataframe(path):
 
 # Cadastro de PDVs: PDV, On/Off Prem, Categoria (c-store, g-store, liquor etc.), Zipcode.
 file.write("## Cadastro de PDVs\n\n")
-overview_dataframe('./data/raw/part-00000-tid-2779033056155408584-f6316110-4c9a-4061-ae48-69b77c7c8c36-4-1-c000.snappy.parquet')
+overview_dataframe(pdv_raw_path)
 
 # Transações: Data, PDV, Produto, Quantidade, Faturamento.
 file.write("## Transações\n\n")
-overview_dataframe('./data/raw/part-00000-tid-5196563791502273604-c90d3a24-52f2-4955-b4ec-fb143aae74d8-4-1-c000.snappy.parquet')
+overview_dataframe(products_raw_path)
 
 # Cadastro de produtos: Produto, Categoria, Descrição, + até 4 atributos.
 file.write("## Cadastro de produtos\n\n")
-overview_dataframe('./data/raw/part-00000-tid-7173294866425216458-eae53fbf-d19e-4130-ba74-78f96b9675f1-4-1-c000.snappy.parquet')
+overview_dataframe(transaction_raw_path)
