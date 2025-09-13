@@ -1,6 +1,8 @@
 import pandas as pd
+import numpy as np
 
 pdv_path = './data/featured/pdvs.parquet'
+products_path = './data/featured/products.parquet'
 transaction_path = './data/featured/transactions.parquet'
 
 def pdvs():
@@ -17,12 +19,28 @@ def pdvs():
     dataframe.to_parquet(pdv_path) 
     del dataframe
 
+def products():
+    path = './data/raw/part-00000-tid-7173294866425216458-eae53fbf-d19e-4130-ba74-78f96b9675f1-4-1-c000.snappy.parquet'
+    dataframe = pd.read_parquet(path, engine='fastparquet')
+    
+    dataframe.to_parquet(products_path)
+    del dataframe    
+
 def transactions():
     path = './data/raw/part-00000-tid-5196563791502273604-c90d3a24-52f2-4955-b4ec-fb143aae74d8-4-1-c000.snappy.parquet'
     dataframe = pd.read_parquet(path, engine='fastparquet')
+
+    dataframe.rename(columns={'internal_store_id': 'pdv', 'internal_product_id': 'produto'}, inplace=True)
+
+    dataframe['date_week'] = np.ceil(dataframe['transaction_date'].dt.day / 7).astype(int)
+    dataframe['date_month'] = dataframe['transaction_date'].dt.month
+
+    dataframe.pop('transaction_date')
+    dataframe.pop('reference_date')
 
     dataframe.to_parquet(transaction_path)
     del dataframe
 
 pdvs()
+products()
 transactions()
