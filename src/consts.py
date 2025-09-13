@@ -10,6 +10,12 @@ transaction_grouped_path = './data/transformed/grouped.parquet'
 transaction_transformed_path = './data/transformed/transactions.parquet'
 
 columns_categorical = [
+    'pdv',
+    'produto',
+    'distributor_id',
+    'date_week',
+    'date_month',
+    
     'premise', 
     'categoria_pdv', 
     'zipcode_national', 

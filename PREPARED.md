@@ -24,17 +24,99 @@ Index(['pdv', 'produto', 'distributor_id', 'date_week', 'date_month',
 ## Primeiros registros
 
 ```bash
-                   pdv              produto distributor_id  date_week  date_month  gross_value_mean  ...  categoria_produto  tipos_produto  label_produto  subcategoria_produto                 marca_produto     fabricante_produto
-0  1000237487041964405  1837429607327399565              4          1           2         35.200001  ...            Package        Package           Core                   IPA  Fire Maker Perfect Match IPA  Fire Maker Brewing Co
-1  1000237487041964405  1837429607327399565              4          2           7         76.800003  ...            Package        Package           Core                   IPA  Fire Maker Perfect Match IPA  Fire Maker Brewing Co
-2  1000237487041964405  1837429607327399565              4          3           2         70.400002  ...            Package        Package           Core                   IPA  Fire Maker Perfect Match IPA  Fire Maker Brewing Co
-3  1000237487041964405  1837429607327399565              4          3          11         76.800003  ...            Package        Package           Core                   IPA  Fire Maker Perfect Match IPA  Fire Maker Brewing Co
-4  1000237487041964405  1837429607327399565              4          4           5         38.400002  ...            Package        Package           Core                   IPA  Fire Maker Perfect Match IPA  Fire Maker Brewing Co
+                   pdv              produto distributor_id  date_week  date_month  ...  tipos_produto  label_produto  subcategoria_produto                 marca_produto     fabricante_produto
+0  1000237487041964405  1837429607327399565              4          1           2  ...        Package           Core                   IPA  Fire Maker Perfect Match IPA  Fire Maker Brewing Co
+1  1000237487041964405  1837429607327399565              4          2           7  ...        Package           Core                   IPA  Fire Maker Perfect Match IPA  Fire Maker Brewing Co
+2  1000237487041964405  1837429607327399565              4          3           2  ...        Package           Core                   IPA  Fire Maker Perfect Match IPA  Fire Maker Brewing Co
+3  1000237487041964405  1837429607327399565              4          3          11  ...        Package           Core                   IPA  Fire Maker Perfect Match IPA  Fire Maker Brewing Co
+4  1000237487041964405  1837429607327399565              4          4           5  ...        Package           Core                   IPA  Fire Maker Perfect Match IPA  Fire Maker Brewing Co
 
 [5 rows x 45 columns]
 ```
 
 ## Exploração dos campos categóricos
+
+**Campo**: pdv
+
+```bash
+pdv
+2430132255826117411    6867
+7542707299572856789    6618
+8078953974483084504    6512
+8723723113467008071    6329
+1057223373529991552    6154
+                       ... 
+6627002260975469810       1
+6634433860630568599       1
+6635798872838090387       1
+5636832940336080769       1
+341384606981080944        1
+Name: count, Length: 14419, dtype: int64
+```
+
+**Campo**: produto
+
+```bash
+produto
+4623814317972718932    103820
+8174625658473329985    100344
+3262679882836704514     97040
+1029370090212151375     93921
+8625590539951587748     87157
+                        ...  
+5022944550211328056         1
+223838595454772869          1
+1270210907131518321         1
+2803938085277951738         1
+2914492137722351363         1
+Name: count, Length: 7070, dtype: int64
+```
+
+**Campo**: distributor_id
+
+```bash
+distributor_id
+4     2685401
+5     1344499
+6      718170
+9      636199
+7      346771
+8      320903
+10      99487
+11      85777
+Name: count, dtype: int64
+```
+
+**Campo**: date_week
+
+```bash
+date_week
+2    1679958
+3    1388497
+1    1342531
+4    1336517
+5     489704
+Name: count, dtype: int64
+```
+
+**Campo**: date_month
+
+```bash
+date_month
+9     796317
+8     574575
+6     562530
+5     541817
+11    530088
+12    525705
+10    515085
+3     493341
+7     484006
+4     459475
+2     390323
+1     363945
+Name: count, dtype: int64
+```
 
 **Campo**: premise
 
