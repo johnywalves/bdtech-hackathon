@@ -1,6 +1,6 @@
 # Resumo da base preparada
 
-Formato linhas **6237207** colunas **45**
+Formato linhas **5747503** colunas **45**
 
 ## Nome das colunas
 
@@ -40,50 +40,50 @@ Index(['pdv', 'produto', 'distributor_id', 'date_week', 'date_month',
 
 ```bash
 pdv
-2430132255826117411    6867
-7542707299572856789    6618
-8078953974483084504    6512
-8723723113467008071    6329
-1057223373529991552    6154
+2430132255826117411    6209
+8078953974483084504    5897
+7542707299572856789    5848
+8723723113467008071    5737
+1057223373529991552    5641
                        ... 
-6627002260975469810       1
-6634433860630568599       1
-6635798872838090387       1
-5636832940336080769       1
-341384606981080944        1
-Name: count, Length: 14419, dtype: int64
+6948558378843430066       1
+4133856437591213383       1
+7780782195473700903       1
+7783536812280189879       1
+18867696775376557         1
+Name: count, Length: 14379, dtype: int64
 ```
 
 **Campo**: produto
 
 ```bash
 produto
-4623814317972718932    103820
-8174625658473329985    100344
-3262679882836704514     97040
-1029370090212151375     93921
-8625590539951587748     87157
-                        ...  
-5022944550211328056         1
-223838595454772869          1
-1270210907131518321         1
-2803938085277951738         1
-2914492137722351363         1
-Name: count, Length: 7070, dtype: int64
+4623814317972718932    95473
+8174625658473329985    91997
+3262679882836704514    88916
+1029370090212151375    86091
+8625590539951587748    80307
+                       ...  
+1870347266672774934        1
+1785489276686692971        1
+7585079007059117701        1
+5861285639684913640        1
+2403829120693223544        1
+Name: count, Length: 6997, dtype: int64
 ```
 
 **Campo**: distributor_id
 
 ```bash
 distributor_id
-4     2685401
-5     1344499
-6      718170
-9      636199
-7      346771
-8      320903
-10      99487
-11      85777
+4     2464756
+5     1248824
+6      665462
+9      583271
+7      321775
+8      295859
+10      91402
+11      76154
 Name: count, dtype: int64
 ```
 
@@ -95,7 +95,6 @@ date_week
 3    1388497
 1    1342531
 4    1336517
-5     489704
 Name: count, dtype: int64
 ```
 
@@ -103,18 +102,18 @@ Name: count, dtype: int64
 
 ```bash
 date_month
-9     796317
-8     574575
-6     562530
-5     541817
-11    530088
-12    525705
-10    515085
-3     493341
-7     484006
-4     459475
+9     754900
+6     511678
+5     491874
+12    489811
+8     483460
+10    482457
+11    472537
+7     463811
+4     441500
+3     426796
 2     390323
-1     363945
+1     338356
 Name: count, dtype: int64
 ```
 
@@ -122,8 +121,8 @@ Name: count, dtype: int64
 
 ```bash
 premise
-Off Premise    5563151
-On Premise      674056
+Off Premise    5121775
+On Premise      625728
 Name: count, dtype: int64
 ```
 
@@ -131,59 +130,59 @@ Name: count, dtype: int64
 
 ```bash
 categoria_pdv
-Convenience                  2104220
-Package/Liquor               1989074
-Grocery                      1120938
-Super Center                  310283
-Restaurant                    255825
-Bar                           186663
-Mexican Rest                   42921
-Hotel/Motel                    20402
-Golf - Public                  19382
-Drug                           19096
-Service Org                    16973
-Pizza                          14800
-Billiard/Bowling               13911
-Golf - Private                 13538
-Sports/Rec Club                10946
-Italian                         9543
-Irish                           8951
-Asian                           7883
-Other On Premise                7008
-Stadium/Concession              6495
-Bodega                          5267
-Barbeque                        4897
-Military                        4672
-Church                          4650
-Club Store                      4639
-Sample Room                     3330
-Other Off Premise               3255
-Night Club                      2946
-Airline/Airport                 2945
-Music Venue                     2834
-Theatre                         2698
-Special Event                   2569
-Adult Entertainment             2560
-Gay Bar                         2055
-Banquet/Caterer                 1754
-Coffee House                    1120
-Neighborhood Store               873
-All Other N/A On Premise         816
-Theme Park                       779
-All Other N/A Off Premise        677
-Korean                           621
-Country/Western                  487
-Winery                           482
-French                           333
-Health Club                      263
-Race Track                       214
-Gym/Fitness                      201
-Sub Distributor                  137
-Marina / Lake                    121
+Convenience                  1937633
+Package/Liquor               1841011
+Grocery                      1024450
+Super Center                  282908
+Restaurant                    237954
+Bar                           173133
+Mexican Rest                   39549
+Hotel/Motel                    19044
+Golf - Public                  17878
+Drug                           17755
+Service Org                    15758
+Pizza                          13551
+Billiard/Bowling               12868
+Golf - Private                 12463
+Sports/Rec Club                10184
+Italian                         8898
+Irish                           8318
+Asian                           7340
+Other On Premise                6871
+Stadium/Concession              5921
+Bodega                          4920
+Barbeque                        4566
+Church                          4381
+Club Store                      4281
+Military                        4245
+Sample Room                     3088
+Other Off Premise               2993
+Night Club                      2762
+Airline/Airport                 2667
+Music Venue                     2585
+Theatre                         2496
+Special Event                   2424
+Adult Entertainment             2366
+Gay Bar                         1905
+Banquet/Caterer                 1627
+Coffee House                    1037
+Neighborhood Store               793
+All Other N/A On Premise         774
+Theme Park                       726
+All Other N/A Off Premise        634
+Korean                           567
+Country/Western                  453
+Winery                           434
+French                           300
+Health Club                      225
+Race Track                       207
+Gym/Fitness                      159
+Sub Distributor                  134
+Marina / Lake                    109
 Salon/Spa/Tann                   108
-Non-Traditional                   18
 German                            16
 Casino                            16
+Non-Traditional                   16
 Mass Merch                         2
 Name: count, dtype: int64
 ```
@@ -192,9 +191,9 @@ Name: count, dtype: int64
 
 ```bash
 zipcode_national
-8    3551173
-3    2685398
-9        636
+8    3282194
+3    2464755
+9        554
 Name: count, dtype: int64
 ```
 
@@ -202,45 +201,45 @@ Name: count, dtype: int64
 
 ```bash
 zipcode_sectional
-300    1026989
-802     759924
-301     692925
-800     550880
-307     504435
-809     418549
-801     405159
-805     373159
-303     253888
-810     229480
-806     188468
-804     178452
-305     171365
-808     102766
-811      74372
-813      73148
-812      62665
-807      56289
-803      40198
-816      17093
-302      13448
-815      12100
-814       8471
-306       4308
-312       3599
-314       3103
-310       2446
-319       1975
-317       1725
-315       1688
-313       1310
-316       1025
-309        470
-304        437
-901        435
-909        201
-308        173
-318         86
-398          3
+300    943267
+802    704665
+301    635905
+800    511312
+307    462850
+809    383608
+801    374402
+805    343613
+303    233484
+810    210747
+806    174140
+804    165205
+305    156043
+808     94238
+811     68901
+813     67359
+812     58315
+807     52004
+803     37201
+816     16644
+302     12485
+815     11750
+814      8090
+306      4052
+312      3301
+314      2888
+310      2246
+319      1867
+317      1572
+315      1538
+313      1214
+316       956
+309       425
+304       418
+901       379
+909       175
+308       165
+318        78
+398         1
 Name: count, dtype: int64
 ```
 
@@ -248,13 +247,13 @@ Name: count, dtype: int64
 
 ```bash
 categoria_produto
-Package              4409926
-Non-Alcohol           876221
-Distilled Spirits     597371
-Draft                 182680
-Wine                  119725
-ABA Spirits            50857
-Tobacco                  427
+Package              4049833
+Non-Alcohol           801765
+Distilled Spirits     570269
+Draft                 167786
+Wine                  110404
+ABA Spirits            47023
+Tobacco                  423
 Name: count, dtype: int64
 ```
 
@@ -262,27 +261,27 @@ Name: count, dtype: int64
 
 ```bash
 tipos_produto
-Package                      4339295
-Non Alcohol                   832221
-Distilled Spirits             414719
-Draft                         182332
-Wine < 14 %                    98768
-N/A Beer                       98595
-Allocated Spirits              88988
-Distilled Spirits-RTD          84397
-Wine > 14 %                    37157
-Hispanic                       24976
-Wine RTD                       14361
-Non Alcohol W&S                10816
-Distilled Spirits-Domest        3560
-Cider Pkg                       2189
-Wine < 14 % - Domestic          1603
-Talking Rain                    1335
-Dairy                            676
-Dist Spirits-RTD Domestic        591
-Tobacco                          427
-MB Wine < 14 %                   109
-Cider Dft                         91
+Package                      3985337
+Non Alcohol                   760915
+Distilled Spirits             398343
+Draft                         167468
+Wine < 14 %                    91363
+N/A Beer                       90346
+Allocated Spirits              85323
+Distilled Spirits-RTD          77729
+Wine > 14 %                    34390
+Hispanic                       22925
+Wine RTD                       12958
+Non Alcohol W&S                10621
+Distilled Spirits-Domest        3301
+Cider Pkg                       2051
+Wine < 14 % - Domestic          1458
+Talking Rain                    1230
+Dairy                            606
+Dist Spirits-RTD Domestic        530
+Tobacco                          423
+MB Wine < 14 %                   102
+Cider Dft                         83
 Pkg 3.2                            1
 Name: count, dtype: int64
 ```
@@ -291,20 +290,20 @@ Name: count, dtype: int64
 
 ```bash
 label_produto
-Core               4988120
-Discontinued        598426
-Allocated            56697
-In&Out               50014
-Winter Seasonal      10802
-Fall Seasonal         5320
-Close Out             5214
-Specialty             4625
-Private Label         2433
-Summer Seasonal        694
-Spring Seasonal        358
-Speciality             243
-Clearing               184
-Other                    2
+Core               4577815
+Discontinued        550390
+Allocated            54699
+In&Out               45876
+Winter Seasonal       9885
+Close Out             4827
+Fall Seasonal         4794
+Specialty             4377
+Private Label         2269
+Summer Seasonal        635
+Spring Seasonal        342
+Speciality             223
+Clearing               139
+Other                    1
 Name: count, dtype: int64
 ```
 
@@ -312,48 +311,48 @@ Name: count, dtype: int64
 
 ```bash
 subcategoria_produto
-Lager                  3314706
-Other Package           410513
-Water                   260009
-Energy                  230885
-IPA                     219603
-Juice & Tea             183902
-Liqueurs & Cordials     163986
-Ale                     122185
-Specialty               121337
-Lager / Pilsner         118540
-Other Non-Alcoholic     114177
-Ready-to-Drink          101113
-Wheat Beer               93751
-Non-Alcoholic            86622
-Bourbon Whiskey          72432
-Vodka                    72379
-Canadian Whisky          56473
-Tequila / Mezcal         45235
-White Wine               44708
-Dairy beverage           41851
-Other Spirits            39668
-Soda                     35017
-Red Wine                 34442
-Pale Ale                 29327
-Stout & Porter           28096
-Other ABA Spirits        26930
-Rum                      26792
-Sour                     25290
-Other Wine               22243
-Brandy / Cognac          22050
-Gin                      11565
-Mixers                   10153
-Other Draft               8613
-Rosé Wine                 7768
-Scotch Whisky             6642
-Sparkling Wine            5328
-Dessert Wine              5236
-Irish Whiskey             2963
-Sour / Wild Ale           2855
-Hard Cider                1011
-Specialty Beer             643
-Gose                       317
+Lager                  3043375
+Other Package           378197
+Water                   235789
+Energy                  211705
+IPA                     201763
+Juice & Tea             169010
+Liqueurs & Cordials     157340
+Ale                     112077
+Specialty               111542
+Lager / Pilsner         108745
+Other Non-Alcoholic     104805
+Ready-to-Drink           94000
+Wheat Beer               85783
+Non-Alcoholic            79222
+Bourbon Whiskey          69592
+Vodka                    68458
+Canadian Whisky          53901
+Tequila / Mezcal         43147
+White Wine               41217
+Dairy beverage           38454
+Other Spirits            38134
+Soda                     32127
+Red Wine                 31730
+Pale Ale                 26996
+Stout & Porter           25927
+Rum                      25903
+Other ABA Spirits        24892
+Sour                     23198
+Brandy / Cognac          21427
+Other Wine               20549
+Gin                      11184
+Mixers                    9658
+Other Draft               7972
+Rosé Wine                 7180
+Scotch Whisky             6436
+Sparkling Wine            4956
+Dessert Wine              4772
+Irish Whiskey             2878
+Sour / Wild Ale           2628
+Hard Cider                 925
+Specialty Beer             586
+Gose                       284
 Name: count, dtype: int64
 ```
 
@@ -361,35 +360,35 @@ Name: count, dtype: int64
 
 ```bash
 marca_produto
-Bud Light                                      822074
-Michelob Ultra                                 578408
-Budweiser                                      526192
-Natural Light                                  164623
-Bud Ice                                        143181
-                                                ...  
-Patrick Sullivan Millstream Chardonnay 2019         1
-Negroni Fernet Liqueur                              1
-10 Barrel Never Have I Ever Pale Ale                1
-Schweiger Iteration Port                            1
-Nestle Pure Life                                    1
-Name: count, Length: 4209, dtype: int64
+Bud Light                                        754742
+Michelob Ultra                                   530899
+Budweiser                                        483579
+Natural Light                                    151049
+Bud Ice                                          131539
+                                                  ...  
+Four Peaks Kuhl Beans                                 1
+Nestle Whole Milk Dark Chocolate                      1
+Maritana Vineyards Chardonnay Shop Block 1967         1
+Maison Jacques Parent Corton Grand Cru Blanc          1
+Marchetti Villa Bonomi Conero Riserva DOCG            1
+Name: count, Length: 4169, dtype: int64
 ```
 
 **Campo**: fabricante_produto
 
 ```bash
 fabricante_produto
-AB Anheuser Busch Inc    4139735
-Sazerac Spirits           469302
-Tilray Brands             321314
-Talking Rain              171687
-Yuengling                 127081
+AB Anheuser Busch Inc    3802737
+Sazerac Spirits           452662
+Tilray Brands             294846
+Talking Rain              155136
+Yuengling                 116109
                           ...   
-Two Dogs Barking               2
 AB Patagonia Brewing           1
 Epic Ventures                  1
 AB Virtue Cider                1
 VPX                            1
+The Wine Trust                 1
 Name: count, Length: 343, dtype: int64
 ```
 

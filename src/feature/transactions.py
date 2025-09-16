@@ -17,6 +17,9 @@ def feature_transactions():
     dataframe['date_week'] = np.ceil(dataframe['transaction_date'].dt.day / 7).astype(int)
     dataframe['date_month'] = dataframe['transaction_date'].dt.month
 
+    fifth_week_index = dataframe[dataframe['date_week'] == 5].index
+    dataframe.drop(fifth_week_index, inplace=True)
+
     dataframe.pop('transaction_date')
     dataframe.pop('reference_date')
 

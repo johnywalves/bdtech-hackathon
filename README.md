@@ -23,7 +23,7 @@ python3 -m venv env
 Iniciar o ambiente
 
 ```bash
-source env/bin/activate
+source ./env/bin/activate
 ```
 
 Instalar as bibliotecas utilizadas
@@ -32,12 +32,10 @@ Instalar as bibliotecas utilizadas
 pip install -r requirements.txt
 ```
 
-### Iniciar o ambiente
-
-Iniciar o ambiente
+Iniciar instância do Apache Spark, pelo ferramenta **Docker Composer**
 
 ```bash
-source env/bin/activate 
+docker compose up -d
 ```
 
 ### Executar processo de exploração
@@ -48,10 +46,18 @@ Executar o script de exploração
 python3 src/explore
 ```
 
+### Executar processo de características
+
+Executar o script de criação características
+
+```bash
+python3 src/feature
+```
+
 ### Executar processo de transformação
 
 Executar o script de transformação
 
 ```bash
-python3 src/explore
+python3 src/transform
 ```
