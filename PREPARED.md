@@ -1,23 +1,16 @@
 # Resumo da base preparada
 
-Formato linhas **5747503** colunas **45**
+Formato linhas **5747503** colunas **22**
 
 ## Nome das colunas
 
 ```bash
 Index(['pdv', 'produto', 'distributor_id', 'date_week', 'date_month',
-       'gross_value_mean', 'gross_value_median', 'gross_value_min',
-       'gross_value_max', 'gross_value_std', 'net_value_mean',
-       'net_value_median', 'net_value_min', 'net_value_max', 'net_value_std',
-       'gross_profit_mean', 'gross_profit_median', 'gross_profit_min',
-       'gross_profit_max', 'gross_profit_std', 'discount_mean',
-       'discount_median', 'discount_min', 'discount_max', 'discount_std',
-       'taxes_mean', 'taxes_median', 'taxes_min', 'taxes_max', 'taxes_std',
-       'quantity_mean', 'quantity_median', 'quantity_min', 'quantity_max',
-       'quantity_sum', 'premise', 'categoria_pdv', 'zipcode_national',
-       'zipcode_sectional', 'categoria_produto', 'tipos_produto',
-       'label_produto', 'subcategoria_produto', 'marca_produto',
-       'fabricante_produto'],
+       'gross_value_median', 'net_value_median', 'gross_profit_median',
+       'discount_median', 'taxes_median', 'quantity_median', 'quantity_sum',
+       'premise', 'categoria_pdv', 'zipcode_national', 'zipcode_sectional',
+       'categoria_produto', 'tipos_produto', 'label_produto',
+       'subcategoria_produto', 'marca_produto', 'fabricante_produto'],
       dtype='object')
 ```
 
@@ -31,7 +24,7 @@ Index(['pdv', 'produto', 'distributor_id', 'date_week', 'date_month',
 3  1000237487041964405  1837429607327399565              4          3          11  ...        Package           Core                   IPA  Fire Maker Perfect Match IPA  Fire Maker Brewing Co
 4  1000237487041964405  1837429607327399565              4          4           5  ...        Package           Core                   IPA  Fire Maker Perfect Match IPA  Fire Maker Brewing Co
 
-[5 rows x 45 columns]
+[5 rows x 22 columns]
 ```
 
 ## Exploração dos campos categóricos
