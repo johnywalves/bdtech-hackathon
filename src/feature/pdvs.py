@@ -17,5 +17,5 @@ def feature_pdvs():
 
     dataframe.pop('zipcode')
 
-    dataframe.to_parquet(pdv_featured_path) 
+    dataframe.to_parquet(pdv_featured_path)
     del dataframe

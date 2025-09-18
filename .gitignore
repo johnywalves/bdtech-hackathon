@@ -98,3 +98,4 @@ venv.bak/
 *Zone.Identifier
 *.parquet
 *.zip
+catboost_info

@@ -9,10 +9,12 @@ transaction_featured_path = './data/featured/transactions.parquet'
 transaction_grouped_path = './data/transformed/grouped.parquet'
 transaction_transformed_path = './data/transformed/transactions.parquet'
 
+transaction_transformed_X_path = './data/transformed/transactions_x.parquet'
+transaction_transformed_Y_path = './data/transformed/transactions_y.parquet'
+
 columns_categorical = [
     'pdv',
     'produto',
-    'distributor_id',
     'date_week',
     'date_month',
     
@@ -20,10 +22,19 @@ columns_categorical = [
     'categoria_pdv', 
     'zipcode_national', 
     'zipcode_sectional', 
+    
     'categoria_produto',
     'tipos_produto',
     'label_produto',
     'subcategoria_produto',
     'marca_produto',
     'fabricante_produto',
+]
+
+columns_numerical = [
+    'gross_value_median',
+    'net_value_median',
+    'gross_profit_median',
+    'discount_median',
+    'taxes_median'
 ]

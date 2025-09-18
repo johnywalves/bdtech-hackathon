@@ -20,6 +20,7 @@ def feature_transactions():
     fifth_week_index = dataframe[dataframe['date_week'] == 5].index
     dataframe.drop(fifth_week_index, inplace=True)
 
+    dataframe.pop('distributor_id')
     dataframe.pop('transaction_date')
     dataframe.pop('reference_date')
 
